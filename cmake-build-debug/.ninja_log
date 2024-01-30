@@ -1,0 +1,7 @@
+# ninja log v5
+0	288	7283483215588143	CMakeFiles/SudokuGenerator.dir/main.c.obj	a7304c0f0ee195c6
+290	574	7283483218430591	SudokuGenerator.exe	672b5a9d7c50d4fe
+3	150	7283499690589676	CMakeFiles/SudokuGenerator.dir/main.c.obj	a7304c0f0ee195c6
+150	287	7283499691939679	SudokuGenerator.exe	672b5a9d7c50d4fe
+2	123	7283500550971005	CMakeFiles/SudokuGenerator.dir/main.c.obj	a7304c0f0ee195c6
+123	265	7283500552376694	SudokuGenerator.exe	672b5a9d7c50d4fe

@@ -1,0 +1,3 @@
+C:/Users/TulainD/CLionProjects/SudokuGenerator/cmake-build-debug/CMakeFiles/SudokuGenerator.dir
+C:/Users/TulainD/CLionProjects/SudokuGenerator/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/TulainD/CLionProjects/SudokuGenerator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
