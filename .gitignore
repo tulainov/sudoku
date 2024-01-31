@@ -16,3 +16,4 @@ Thumbs.db
 config.ini.local
 /generated/
 secrets.txt
+cmake-build-debug/
