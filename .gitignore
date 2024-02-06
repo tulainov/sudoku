@@ -16,4 +16,9 @@ Thumbs.db
 config.ini.local
 /generated/
 secrets.txt
-cmake-build-debug/
+cmake-build-debug
+.ninja_deps
+.ninja_log
+build.ninja
+clion-Debug-log.txt
+main.c.obj
