@@ -1,0 +1,7 @@
+#ifndef SUDOKUGENERATOR_FILLINGWITHRANDOMNUMS_H
+#define SUDOKUGENERATOR_FILLINGWITHRANDOMNUMS_H
+
+int fillingWithRandomNumbers(int sudoku[9][9]);
+void fillSudoku(int sudoku[9][9]);
+
+#endif //SUDOKUGENERATOR_FILLINGWITHRANDOMNUMS_H
