@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "../../sudoku.h"
 
-
+// function to check user's input
 int checkingLetter(char letter) {
     switch (toupper(letter)) {
         case 'A':
@@ -35,7 +35,7 @@ int transportingLineNum(int number) {
 }
 
 // function to feel the fields with numbers
-void fillingFieldsWithNumbers(int sudokuField[9][9]) {
+void addingNumberToField(int sudokuField[9][9]) {
 
     for (int i = 0; i < 9; i++) {
         for (int j = 0; j < 9; j++) {
@@ -62,9 +62,9 @@ void fillingFieldsWithNumbers(int sudokuField[9][9]) {
         int y = 0;
         scanf_s(" %d", &y);
 
-        int num = transportingLineNum(y);
+        int lineNum = transportingLineNum(y);
 
-        if (num < 0 || num > 8) {
+        if (lineNum < 0 || lineNum > 8) {
             puts("Wrong line value, try again");
             continue;
         }

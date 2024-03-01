@@ -1,8 +1,5 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "../../sudoku.h"
 
-// TODO: backtracking algorithm
 
 int checkTheNumber(int sudoku[9][9], int row, int col, int num) {
 
@@ -26,11 +23,46 @@ int checkTheNumber(int sudoku[9][9], int row, int col, int num) {
 
 int fillingWithRandomNumbers(int sudoku[9][9]) {
 
+//    -1 to show that row/col is not found
+    int row = -1;
+    int col = -1;
+    int isEmpty = 0;
+
+    for (int i = 0; i < 9; i++) {
+        for (int j = 0; j < 9; j++) {
+            if (sudoku[i][j] == 0) {
+                row = i;
+                col = j;
+                isEmpty = 1;
+                break;
+            }
+        }
+        if (isEmpty) {
+            break;
+        }
+    }
+
+    if (!isEmpty) {
+        return 1;
+    }
+
+    for (int num = 1; num <= 9; num++) {
+        if (checkTheNumber(sudoku, row, col, num)) {
+            sudoku[row][col] = num;
+
+            if (fillingWithRandomNumbers(sudoku)) {
+                return 1;
+            }
+
+            sudoku[row][col] = 0;
+        }
+    }
 
 
     return 0;
 }
 
-
 void fillSudoku(int sudoku[9][9]) {
+
+    fillingWithRandomNumbers(sudoku);
 }

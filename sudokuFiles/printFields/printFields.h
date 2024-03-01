@@ -1,6 +1,7 @@
 #ifndef SUDOKUGENERATOR_PRINTFIELDS_H
 #define SUDOKUGENERATOR_PRINTFIELDS_H
 
+
 void printFields(int sudokuField[9][9]);
 
 #endif //SUDOKUGENERATOR_PRINTFIELDS_H

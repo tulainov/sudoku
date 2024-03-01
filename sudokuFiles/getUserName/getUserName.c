@@ -9,7 +9,7 @@ void getUserName() {
 
     scanf_s("%s", name);
 
-    printf("Welcome %s, let's play sudoku!\n", name);
+    printf("\nWelcome %s, let's play sudoku!\n", name);
 
 }
 

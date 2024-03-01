@@ -13,4 +13,8 @@ add_executable(SudokuGenerator main.c
         sudokuFiles/setValue/settingValue.c
         sudokuFiles/randomNumbers/fillingWithRandomNums.h
         sudokuFiles/randomNumbers/fillingWithRandomNums.c
+        sudokuFiles/getDifficulty/diffuculty.c
+        sudokuFiles/getDifficulty/difficulty.h
+        sudokuFiles/setDifficulty/setDifficulty.h
+        sudokuFiles/setDifficulty/setDifficulty.c
 )

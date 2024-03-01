@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include "sudoku.h"
+#include <stdlib.h>
 
 int main() {
 
@@ -8,10 +9,13 @@ int main() {
 
     int sudoku[9][9] = {0};
 
-//    puts("Fill the field with the numbers you want");
-//    fillingFieldsWithNumbers(sudoku);
-
+    fillSudoku(sudoku);
     printFields(sudoku);
 
-    return 0;
+    int level = getDifficultyLevel();
+
+    setDifficulty(sudoku, level);
+    printFields(sudoku);
+
+    return (EXIT_SUCCESS);
 }
