@@ -17,4 +17,6 @@ add_executable(SudokuGenerator main.c
         sudokuFiles/getDifficulty/difficulty.h
         sudokuFiles/setDifficulty/setDifficulty.h
         sudokuFiles/setDifficulty/setDifficulty.c
+        sudokuFiles/gameLogic/gameLogic.h
+        sudokuFiles/gameLogic/gameLogic.c
 )

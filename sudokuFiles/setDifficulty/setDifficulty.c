@@ -8,19 +8,18 @@
 
 void asterisksCover(int sudoku[SIZE][SIZE], int asterisksNumber) {
 
-
     int count = 0;
     while (count < asterisksNumber) {
         int row = rand() % SIZE;
         int col = rand() % SIZE;
 
-        if (sudoku[row][col] != '*') {
-            sudoku[row][col] = '*';
+        if (sudoku[row][col] != 0) {
+            sudoku[row][col] = 0;
             count++;
         }
     }
 }
-//
+
 
 void setDifficulty(int sudoku[SIZE][SIZE], int level) {
 

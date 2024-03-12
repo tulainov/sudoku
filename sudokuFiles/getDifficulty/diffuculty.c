@@ -8,7 +8,7 @@ int getDifficultyLevel() {
     bool falseInput = false;
 
     while (!falseInput) {
-        printf("%s", "\nWhat getDifficulty level do you want to play? from 1 to 3: ");
+        printf("%s", "\nWhat difficulty level do you want to play? from 1 to 3: ");
 
         if (scanf_s("%d", &answer) != 1) {
             while(getchar() != '\n') {

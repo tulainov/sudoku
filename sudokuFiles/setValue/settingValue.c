@@ -49,7 +49,7 @@ void addingNumberToField(int sudokuField[9][9]) {
         char letter = 0;
         scanf_s(" %c", &letter);
 
-        if (letter == 'Q' || letter == 'q') break;
+        if (toupper(letter) == 'Q') break;
 
         int x = checkingLetter(letter);
 
@@ -72,6 +72,11 @@ void addingNumberToField(int sudokuField[9][9]) {
         puts("Which value you want to give to this number (from 1 to 9):");
         int number = 0;
         scanf_s(" %d", &number);
+
+        if (number < 1 || number > 9) {
+            puts("Invalid number, please try again");
+            continue;
+        }
 
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
